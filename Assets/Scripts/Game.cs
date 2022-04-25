@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public class Game : MonoBehaviour
 {
     private GamePhase _gamePhase;
+    public event Action ChangedState; //объявляем событие изменения состояния игры
 
-    void Start()
+    private void Start()
     {
         _gamePhase = GamePhase.Start;
     }
 
-    void Update()
+    private void Update() //переделать на свитч, а позже на стейтмашину
     {
         if (_gamePhase == GamePhase.Start)
         {

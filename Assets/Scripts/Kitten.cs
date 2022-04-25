@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,12 @@ public class Kitten : MonoBehaviour
 {
     private Rigidbody2D _rb;
     [SerializeField] private float _speed;
-    void Start()
+    public event Action RecievedPoint; // объявлем ивент, на который подпишем класс ScoreCounter
+    private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
     }
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -20,9 +22,9 @@ public class Kitten : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.IsTouchingLayers(7))
+        if (col.gameObject.CompareTag("ScoreZone"))
         {
-            Debug.Log("Shoooo");
+            RecievedPoint?.Invoke(); //Вызываем ивент ReceivedPoint
         }
     }
 }
