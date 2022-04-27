@@ -8,7 +8,6 @@ public class Game : MonoBehaviour
 {
     private GamePhase _gamePhase;
     public event Action ChangedState; //объявляем событие изменения состояния игры
-
     private void Start()
     {
         _gamePhase = GamePhase.Start;
@@ -21,7 +20,7 @@ public class Game : MonoBehaviour
             Time.timeScale = 0f;
             if (Input.GetMouseButtonDown(0))
             {
-                ChangeState(GamePhase.Play);
+                SetGameState(GamePhase.Play);
             }
         }
         else if (_gamePhase == GamePhase.Play)
@@ -36,11 +35,13 @@ public class Game : MonoBehaviour
         {
             Time.timeScale = 0f;
         }
+        
     }
 
-    public void ChangeState(GamePhase gamephase)
+    public void SetGameState(GamePhase gamephase)
     {
         _gamePhase = gamephase;
+        ChangedState?.Invoke();
     }
 
     public enum GamePhase
