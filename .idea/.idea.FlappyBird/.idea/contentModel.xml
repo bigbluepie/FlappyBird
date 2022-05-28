@@ -8,7 +8,19 @@
       <e p="Assembly-CSharp.Player.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="CameraFollower.cs" t="Include" />
+          <e p="Core" t="Include">
+            <e p="Game.cs" t="Include" />
+            <e p="TimeScaler.cs" t="Include" />
+          </e>
           <e p="ForegroundRotator.cs" t="Include" />
+          <e p="Pig.cs" t="Include" />
+          <e p="Pillar.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="ActivationSwitcher.cs" t="Include" />
+            <e p="MessageBox.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

@@ -1484,6 +1484,7 @@ GameObject:
   - component: {fileID: 891397009}
   - component: {fileID: 891397008}
   - component: {fileID: 891397007}
+  - component: {fileID: 891397010}
   m_Layer: 5
   m_Name: Sound_Button
   m_TagString: Untagged
@@ -1555,7 +1556,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 891397008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891397010}
+        m_TargetAssemblyTypeName: ActivationSwitcher, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &891397008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,6 +1607,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891397005}
   m_CullTransparentMesh: 1
+--- !u!114 &891397010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891397005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aac4eea5bbf9594ab58972d5f01c480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: -1190701383, guid: 4828dfea9c12823469711d00907606c3, type: 3}
+  - {fileID: 546797217, guid: 4828dfea9c12823469711d00907606c3, type: 3}
 --- !u!1 &933135639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933135640}
   m_Layer: 5
-  m_Name: Right_Bar
+  m_Name: SFX_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2071,6 +2099,7 @@ GameObject:
   - component: {fileID: 1356644662}
   - component: {fileID: 1356644661}
   - component: {fileID: 1356644660}
+  - component: {fileID: 1356644663}
   m_Layer: 5
   m_Name: Music_Button
   m_TagString: Untagged
@@ -2142,7 +2171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1356644661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1356644663}
+        m_TargetAssemblyTypeName: ActivationSwitcher, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356644661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,6 +2222,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356644658}
   m_CullTransparentMesh: 1
+--- !u!114 &1356644663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356644658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aac4eea5bbf9594ab58972d5f01c480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: -1263537884, guid: 4828dfea9c12823469711d00907606c3, type: 3}
+  - {fileID: -752444499, guid: 4828dfea9c12823469711d00907606c3, type: 3}
 --- !u!1 &1393069777
 GameObject:
   m_ObjectHideFlags: 0
