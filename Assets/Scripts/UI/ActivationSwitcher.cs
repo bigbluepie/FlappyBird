@@ -7,7 +7,12 @@ using UnityEngine.UI;
 public class ActivationSwitcher : MonoBehaviour
 {
     private ActivationStates _state;
-    [SerializeField] private Sprite[] _sprites;
+    public ActivationStates State
+    {
+        get => _state;
+    }
+
+    public Sprite[] _sprites;
     private Button _button;
     
 
@@ -43,7 +48,7 @@ public class ActivationSwitcher : MonoBehaviour
     }
 }
 
-enum ActivationStates
+public enum ActivationStates
 {
     Active,
     Disactive

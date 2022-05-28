@@ -7,7 +7,7 @@ public class MessageBox : MonoBehaviour
 {
     [SerializeField] private Game _game;
     [SerializeField] private TMP_Text _text;
-    private String[] _textArray = {"GET READY", "GO", "PAUSE", "DEFEAT"};
+    private String[] _textArray = {"GET READY", "GO", "PAUSED", "DEFEATED"};
     [SerializeField] private Color[] _colorArray;
 
     [SerializeField] private GameObject _startScreen;

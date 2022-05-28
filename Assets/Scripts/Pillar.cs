@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Pillar : MonoBehaviour
 {
-    [SerializeField] private float _speed = 5f;
+    [SerializeField] private float _speed = 3f;
     private float _destroyBorder;
 
     private void Start()

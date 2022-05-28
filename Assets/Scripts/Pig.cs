@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,13 +10,12 @@ public class Pig : MonoBehaviour
     private bool _underControl;
     private Rigidbody2D _rb;
     [SerializeField] private float _speed;
-    private TrailRenderer _trail;
+    public event Action RecievedPoint;
 
     private void Awake()
     {
         _game.GameStateChanged += SetState;
         _rb = GetComponent<Rigidbody2D>();
-        _trail = GetComponent<TrailRenderer>();
     }
 
     private void SetState(GameStates gameState)
@@ -53,5 +53,13 @@ public class Pig : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("ScoreZone"))
+        {
+            RecievedPoint?.Invoke();
+        }
     }
 }
