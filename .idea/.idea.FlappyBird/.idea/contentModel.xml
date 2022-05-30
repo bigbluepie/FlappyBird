@@ -9,7 +9,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Core" t="Include">
+            <e p="DefeatGame.cs" t="Include" />
             <e p="Game.cs" t="Include" />
+            <e p="HighScoreSaveLoader.cs" t="Include" />
             <e p="PauseGame.cs" t="Include" />
             <e p="ScoreCounter.cs" t="Include" />
             <e p="TimeScaler.cs" t="Include" />
@@ -20,6 +22,9 @@
           <e p="Spawner.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="ActivationSwitcher.cs" t="Include" />
+            <e p="Menu" t="Include">
+              <e p="GameStarter.cs" t="Include" />
+            </e>
             <e p="MessageBox.cs" t="Include" />
           </e>
         </e>

@@ -11,11 +11,13 @@ public class Pig : MonoBehaviour
     private Rigidbody2D _rb;
     [SerializeField] private float _speed;
     public event Action RecievedPoint;
+    private Animator _animator;
 
     private void Awake()
     {
         _game.GameStateChanged += SetState;
         _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void SetState(GameStates gameState)
@@ -36,7 +38,7 @@ public class Pig : MonoBehaviour
                 break;
             case GameStates.Defeat:
                 _underControl = false;
-                _rb.gravityScale = 1f;
+                _rb.gravityScale = 0f;
                 break;
             default:
                 break;
@@ -54,12 +56,20 @@ public class Pig : MonoBehaviour
         }
 
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("ScoreZone"))
         {
             RecievedPoint?.Invoke();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            _animator.SetTrigger("death");
+            _game.ChangeGameState(GameStates.Defeat);
         }
     }
 }

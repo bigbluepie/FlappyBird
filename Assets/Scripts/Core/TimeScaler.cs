@@ -25,7 +25,7 @@ public class TimeScaler : MonoBehaviour
                 _timeScale = 0f;
                 break;
             case GameStates.Defeat:
-                _timeScale = 1f;
+                _timeScale = 0f;
                 break;
             default:
                 _timeScale = 1f;

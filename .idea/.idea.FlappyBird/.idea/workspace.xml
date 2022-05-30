@@ -8,14 +8,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MessageBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/ScoreCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/HighScoreSaveLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ActivationSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PauseGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForegroundRotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pillar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MessageBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/DefeatGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Menu/GameStarter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PauseGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@7.0.4/Editor/SpriteOutlineRenderer/SpriteOutlineRenderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/TimeScaler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,15 +35,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonSwitcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/TimeScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pillar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ScoreCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ActivationSwitcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PauseGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Defeat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pillar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/TimeScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MessageBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Menu/GameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/SavePrefs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/DefeatGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ScoreCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/HighScoreSaveLoader.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +92,8 @@
       <workItem from="1653728810037" duration="163000" />
       <workItem from="1653729077853" duration="21128000" />
       <workItem from="1653760066934" duration="2684000" />
+      <workItem from="1653839270074" duration="2814000" />
+      <workItem from="1653937812907" duration="6393000" />
     </task>
     <servers />
   </component>
