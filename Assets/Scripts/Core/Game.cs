@@ -3,10 +3,8 @@ using UnityEngine;
 
 public class Game: MonoBehaviour
 {
-    [SerializeField] private GameStates _gameState;
-
     public event Action<GameStates> GameStateChanged;
-
+    [SerializeField] private GameStates _gameState;
     private void Start()
     {
         ChangeGameState(GameStates.Start);
@@ -23,12 +21,4 @@ public class Game: MonoBehaviour
         if (_gameState == GameStates.Start && Input.GetMouseButtonDown(0))
             ChangeGameState(GameStates.Play);
     }
-}
-
-public enum GameStates
-{
-    Start,
-    Play,
-    Defeat,
-    Pause
 }

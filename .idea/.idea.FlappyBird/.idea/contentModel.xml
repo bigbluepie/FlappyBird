@@ -9,8 +9,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Core" t="Include">
+            <e p="ContinueGame.cs" t="Include" />
+            <e p="CurrentScoreSaveLoader.cs" t="Include" />
             <e p="DefeatGame.cs" t="Include" />
             <e p="Game.cs" t="Include" />
+            <e p="GameStates.cs" t="Include" />
             <e p="HighScoreSaveLoader.cs" t="Include" />
             <e p="PauseGame.cs" t="Include" />
             <e p="ScoreCounter.cs" t="Include" />
